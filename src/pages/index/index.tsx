@@ -7,8 +7,9 @@ export default function Index () {
   })
 
   return (
-    <View className='index'>
-      <Text>Hello world!</Text>
-    </View>
+    // <View className='index p5 accent-red-600'>
+    //   <Text>Hello world!</Text>
+    // </View>
+      <View className="text-[#acc855] text-[100px]">Hello world!</View>
   )
 }
