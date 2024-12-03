@@ -18,7 +18,9 @@ export default defineConfig<'webpack5'>(async (merge, { command, mode }) => {
     },
     sourceRoot: 'src',
     outputRoot: 'dist',
-    plugins: ['@tarojs/plugin-html'],
+    plugins: [
+      '@tarojs/plugin-html'
+    ],
     defineConstants: {
     },
     copy: {
@@ -56,7 +58,7 @@ export default defineConfig<'webpack5'>(async (merge, { command, mode }) => {
               plugin: UnifiedWebpackPluginV5,
               args: [{
                 appType: 'taro',
-                // 下面个配置，会开启 rem -> rpx 的转化
+                // 开启 rem -> rpx 的转化
                 rem2rpx: true
               }]
             }
